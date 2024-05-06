@@ -18,13 +18,11 @@
 }
 
 .projects-container.light-theme {
-  background: linear-gradient(
-      rgba(237, 225, 116, 0.629),
-      rgba(242, 223, 49, 0.5)
-    ),
+  background: linear-gradient(rgba(237, 225, 116, 0.8), rgba(242, 223, 49, 0.6)),
     url("src/assets/pattern-yellow.png");
 }
 
 .projects-container.dark-theme {
-  background: url("src/assets/pattern-black-white.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("src/assets/pattern-black-white.png");
 }
