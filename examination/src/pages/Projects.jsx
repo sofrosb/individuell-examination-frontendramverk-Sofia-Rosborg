@@ -1,8 +1,11 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import "./Projects.css";
+
 export default function Projects() {
   const [projects, setProjects] = useState([]);
+  const theme = useSelector((state) => state.theme.theme);
 
   useEffect(() => {
     fetch("https://api.github.com/users/sofrosb/repos")
@@ -16,7 +19,11 @@ export default function Projects() {
 
   return (
     <main className="projects">
-      <section className="projects-container">
+      <section
+        className={`projects-container ${
+          theme === "light" ? "light-theme" : "dark-theme"
+        }`}
+      >
         <h2>GitHub-projekt</h2>
         <ul>
           {projects.map((project) => (

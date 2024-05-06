@@ -59,7 +59,6 @@ export default function Contact() {
             placeholder="Namn"
           />
         </div>
-
         <div className="input-container">
           <Icon path={mdiEmailOutline} size={1} className="icon" />
           <input

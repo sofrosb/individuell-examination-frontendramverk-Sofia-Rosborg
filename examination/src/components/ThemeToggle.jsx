@@ -7,7 +7,12 @@ export default function ThemeToggle() {
   const theme = useSelector((state) => state.theme.theme);
 
   return (
-    <button onClick={() => dispatch(toggleTheme())}>
+    <button
+      className={`theme-toggle-button ${
+        theme === "light" ? "light-theme" : "dark-theme"
+      }`}
+      onClick={() => dispatch(toggleTheme())}
+    >
       {" "}
       {theme === "light" ? "Dark" : "Light"}{" "}
     </button>

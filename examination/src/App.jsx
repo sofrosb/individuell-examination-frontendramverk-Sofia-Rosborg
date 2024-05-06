@@ -12,7 +12,7 @@ function App() {
   const themeClass = theme === "light" ? "light-theme" : "dark-theme";
   return (
     <Router>
-      <section className={`app-container ${themeClass}`}>
+      <section className={`${themeClass}`}>
         <Sidebar />
         <Routes>
           <Route path="/" element={<About />}></Route>

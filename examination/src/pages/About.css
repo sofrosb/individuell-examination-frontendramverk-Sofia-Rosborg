@@ -7,7 +7,6 @@
 
 .about-container {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   height: 600px;
@@ -16,6 +15,15 @@
   background-color: #f2df31;
   border-radius: 10px;
   padding: 0px 20px;
+}
+
+.about-container.light-theme {
+  background-color: #f2df31;
+}
+
+.about-container.dark-theme {
+  background-color: #3c50d1;
+  color: #fff;
 }
 
 .about-image-container {
@@ -42,7 +50,13 @@
   display: block;
   width: 95%;
   height: 5px;
-  background-color: #000;
   margin: 10px 0 20px;
   border-radius: 5px;
+}
+
+.line.light-theme {
+  background-color: #000;
+}
+.line.dark-theme {
+  background-color: #fff;
 }
