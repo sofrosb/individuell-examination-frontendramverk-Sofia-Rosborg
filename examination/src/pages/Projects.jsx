@@ -7,7 +7,10 @@ export default function Projects() {
   useEffect(() => {
     fetch("https://api.github.com/users/sofrosb/repos")
       .then((response) => response.json())
-      .then((data) => setProjects(data))
+      .then((data) => {
+        console.log(data);
+        setProjects(data);
+      })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
@@ -17,7 +20,15 @@ export default function Projects() {
         <h2>GitHub-projekt</h2>
         <ul>
           {projects.map((project) => (
-            <li key={project.id}>{project.name}</li>
+            <li key={project.id}>
+              <a
+                href={project.html_url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.name}
+              </a>
+            </li>
           ))}
         </ul>
       </section>

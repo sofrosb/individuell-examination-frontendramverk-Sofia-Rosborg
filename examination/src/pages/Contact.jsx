@@ -25,7 +25,6 @@ export default function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission
     console.log(formData);
     setFormData(initialFormState);
   };
