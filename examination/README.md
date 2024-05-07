@@ -2,11 +2,12 @@
 
 Sofia Rosborg
 
-useLocations hook:
-"This hook returns the current location object. This can be useful if you'd like to perform some side effect whenever the current location changes." (https://reactrouter.com/en/main/hooks/use-location)
-"The `useLocation` hook in React Router is used to return the current location of a React component. The `useLocation` returns the current location as an object and comes with props such as" (https://medium.com/@alexanie_/https-ocxigin-hashnode-dev-uselocation-hook-in-react-router-758a0a711308)
-Hooken useLocations används bland annat till att bestämma vilken länk i en navigering som ska ha en "aktiv" stil baserat på den aktuella URL:en. Jag använde helt enkelt den hooken för att kunna styla de olika alternativen i asiden beroende på vilken sida användaren är inne på.
+Hooken useLocations:
+Hooken useLocations används bland annat till att returnera den aktuella platsen för ett objekt. Det kan vara användbart när man vill visa någon sidoeffekt när den aktuella platsen förändras. useLocations kan användas till att bestämma vilken länk i en navigering som ska ha en "aktiv" stil baserat på den aktuella URL:en. Jag använde helt enkelt den hooken för att kunna styla de olika alternativen i sidebaren beroende på vilken sida användaren är inne på.
 
-Hooken useEffect (Projects)
+Hooken useEffect:
+Hooken useEffect är en funktion som används för att hantera sidoeffekter i funktionella komponenter i React. Sidoeffekter kan vara att till exempel prenumerera på data, interagera med DOM:en eller att utföra asynkrona operationer. useEffect används för att definiera funktioner som ska köras efter att renderingen har skett och för att hantera saker som att prenumerera på data eller reagera på användarinteraktioner och körs efter varje rendering, inklusive den första renderingen när komponenten monteras, samt efter varje uppdatering när komponentens tillstånd eller egenskaper ändras.
+Ett av de vanligaste användningsområdena för useEffect är att hämta data från API:er (det vill säga utföra en asynkron operation), vilket är så jag använt det. useEffect gör alltså en HTTP-förfrågan och uppdaterar komponentens tillstånd (i det här fallet min projects-container) med den hämtade datan.
 
-Jag använde även biblioteket Pictogrammers för att använda ikoner till formuläret.
+Biblioteket Material Design Icons:
+Jag använde även biblioteket Material Design Icons (https://pictogrammers.com/library/mdi/) för att använda ikoner till formuläret. Jag tycker att ikoner i ett formulär får det att se mer inbjudande och levande ut än om man bara använder sig av text.
