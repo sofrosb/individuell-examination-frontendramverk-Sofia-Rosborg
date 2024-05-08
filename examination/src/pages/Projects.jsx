@@ -14,6 +14,8 @@ export default function Projects() {
     fetch("https://api.github.com/users/sofrosb/repos")
       .then((response) => response.json())
       .then((data) => {
+        // Sorterar projekten i datumordning (senaste först):
+        data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
         setProjects(data);
       })
       .catch((error) => console.error("Error fetching data:", error));
