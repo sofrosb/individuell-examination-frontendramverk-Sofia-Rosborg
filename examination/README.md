@@ -11,3 +11,5 @@ Ett av de vanligaste användningsområdena för useEffect är att hämta data fr
 
 Biblioteket Material Design Icons:
 Jag använde även biblioteket Material Design Icons (https://pictogrammers.com/library/mdi/) för att använda ikoner till formuläret. Jag tycker att ikoner i ett formulär får det att se mer inbjudande och levande ut än om man bara använder sig av text.
+
+Jag har gjort något man inte får med kommentarer i koden, vissa är skrivna ovanför koden och andra är skriva på samma rad MEN jag gjorde det valet för att jag tyckte det blev lättare att läsa på det sättet. Avslutas kommentaren med : betyder det att den avser raden under.

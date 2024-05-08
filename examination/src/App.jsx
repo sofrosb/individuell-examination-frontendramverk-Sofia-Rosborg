@@ -8,6 +8,9 @@ import "./App.css";
 import Sidebar from "./components/Sidebar";
 
 function App() {
+  // useSelector används för att hämta data från Redux, i detta fall theme. Det möjliggör dynamisk uppdatering av komponenter baserat på Redux-storens tillstånd.
+  // Den är återkommande i flera komponenter och används för att växla mellan dark/light mode.
+  // Det görs genom att lägga till en CSS-klass baserat på det aktuella temat med en ternary operator:
   const theme = useSelector((state) => state.theme.theme);
   const themeClass = theme === "light" ? "light-theme" : "dark-theme";
   return (
