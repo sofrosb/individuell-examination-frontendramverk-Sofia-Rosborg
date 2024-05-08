@@ -27,9 +27,18 @@ export default function About() {
               }`}
             ></span>
           </div>
-          <p>
-            Frontend-utvecklare in the making. Gillar ***. Finns i Stockholm men
-            tillgänglig remote!
+          <p className="about-text">
+            Hej där! Jag är en blivande frontend-utvecklare med en passion för
+            att skapa intuitiva och användarvänliga gränssnitt. Med mina
+            kunskaper och kreativitet strävar jag efter att göra webbupplevelser
+            både tilltalande och funktionella. Jag är baserad i Stockholm men är
+            också tillgänglig för fjärrarbete, redo att bidra till spännande
+            projekt världen över. Utöver kodning älskar jag att umgås med nära
+            och kära, dricka öl, simma och gamea samt spenderar gärna tid på att
+            utforska nya teknologier och designmönster. Jag ser fram emot att
+            kombinera min tekniska expertis med mina personliga intressen för
+            att skapa innovativa och engagerande digitala lösningar. Låt oss
+            skapa något fantastiskt tillsammans! 🚀
           </p>
         </article>
       </section>

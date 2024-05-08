@@ -14,19 +14,21 @@ export default function Contact() {
     message: "",
   };
 
+  // useState-hooken används för att hantera formulärdata och dess uppdateringar:
   const [formData, setFormData] = useState(initialFormState);
 
+  // Funktion som används för att hantera ändringar i formuläret:
   const handleChange = (event) => {
     setFormData({
-      ...formData,
-      [event.target.name]: event.target.value,
+      ...formData, // Behåller tidigare formulär-data.
+      [event.target.name]: event.target.value, // Uppdaterar formulärdatan baserat på användarinput.
     });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData);
-    setFormData(initialFormState);
+    setFormData(initialFormState); // Återställer formulärdatan till dess initiala tillstånd efter submit.
   };
 
   return (
@@ -54,8 +56,8 @@ export default function Contact() {
           <input
             type="text"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
+            value={formData.name} // Värdet av inputfältet som används för att visa aktuell data i fältet.
+            onChange={handleChange} // Funktion som körs när värdet i fältet ändras.
             placeholder="Namn"
           />
         </div>

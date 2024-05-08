@@ -46,6 +46,10 @@
   justify-content: center;
 }
 
+.about-text {
+  width: 90%;
+}
+
 .line {
   display: block;
   width: 95%;

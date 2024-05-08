@@ -5,6 +5,7 @@ import ThemeToggle from "./ThemeToggle";
 import "./Sidebar.css";
 
 export default function Sidebar() {
+  // useLocation förklaras i README.md:
   const location = useLocation();
   const theme = useSelector((state) => state.theme.theme);
   const themeClass = theme === "light" ? "light-theme" : "dark-theme";
@@ -17,10 +18,12 @@ export default function Sidebar() {
         <ul>
           <li
             className={`menu-item ${
+              // Om den aktuella sidans URL matchar "/projects" läggs även klassen "active" till, vilket indikerar att menyalternativet är aktivt:
               location.pathname === "/" ? "active" : ""
             } ${themeClass}`}
           >
             <Link to="/" className={`custom-link ${themeClass}`}>
+              {" "}
               Om mig
             </Link>
           </li>
