@@ -18,9 +18,8 @@ export default function ThemeToggle() {
       }`}
       onClick={() => dispatch(toggleTheme())}
     >
-      {" "}
       {/* Visar text beroende på aktuellt tema, är temat ljust visar den texten "DARK" och tvärtom, vid mörkt visar den texten "LIGHT". */}
-      {theme === "light" ? "Dark" : "Light"}{" "}
+      {theme === "light" ? "Dark" : "Light"}
     </button>
   );
 }
